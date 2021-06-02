@@ -2,7 +2,8 @@ package JavaConcept;
 
 public class StringBuilder$Buffer {
 
-    /* This method converts a given String to a char array. We are replicating the built-in method of String.charArray() */
+    /* This method converts a given String to a char array.
+    We are replicating the built-in method of String.charArray() */
 
     static char[] toCharArrayMethodEmine(String str){ // str: "hey" expected: ['h', 'e', 'y']
         char[] charArr = new char[str.length()];

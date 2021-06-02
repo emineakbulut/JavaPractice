@@ -13,7 +13,9 @@ public class RepeatedFirstWord {
         Map<Character, Integer> hm = new HashMap<>(); // hm<e> = 3;
 
         for(char ch:charArr){ // "eminecigim"
-            hm.put(ch, hm.getOrDefault(ch, 0) +1); // getOrDefault method checks if there is a key as requested in the hashmap, if it exist it returns the value of it, otherwise it returns the value default - which in our case is 0.
+            hm.put(ch, hm.getOrDefault(ch, 0) +1);
+            // getOrDefault method checks if there is a key as requested in the hashmap,
+            // if it exist it returns the value of it, otherwise it returns the value default - which in our case is 0.
         }
 
 //        for(char ch: hm.keySet())
