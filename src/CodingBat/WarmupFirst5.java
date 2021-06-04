@@ -1,26 +1,30 @@
 package CodingBat;
 
-public class First {
+public class WarmupFirst5 {
     //    The parameter weekday is true if it is a weekday,
 //    and the parameter vacation is true if we are on vacation.
 //    We sleep in if it is not a weekday or we're on vacation. Return true if we sleep in.
     public static void main(String[] args) {
-        System.out.println(sleepIn(false, false));
-        System.out.println(sleepIn(true, false));
-        System.out.println(sleepIn(false, true));
+//        System.out.println(sleepIn(false, false));
+//        System.out.println(sleepIn(true, false));
+//        System.out.println(sleepIn(false, true));
+//
+//        System.out.println("======================================");
+//
+//        System.out.println(monkeyTrouble(true,false));
+//
+//        System.out.println("======================================");
+//
+//        System.out.println(sumDouble(2,5));
+//        System.out.println(sumDouble(4,4));
+//
+//        System.out.println("======================================");
+//
+//        System.out.println(diff21(33));
+//
+//        System.out.println("======================================");
 
-        System.out.println("======================================");
-
-        System.out.println(monkeyTrouble(true,false));
-
-        System.out.println("======================================");
-
-        System.out.println(sumDouble(2,5));
-        System.out.println(sumDouble(4,4));
-
-        System.out.println("======================================");
-
-        System.out.println(diff21(33));
+        System.out.println( makes10(11,8));
 
     }
 
@@ -77,6 +81,16 @@ diff21(21) → 0
             return (n-21)*2;
         }
         return result;
+    }
+
+   // Given 2 ints, a and b, return true if one of them is 10 or if their sum is 10.
+
+    public static boolean makes10(int a,int b){
+        boolean result=true;
+        if(a==10 || b==10 || a+b==10)
+        return result;
+        else return false;
+
     }
     
 }

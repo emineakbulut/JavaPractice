@@ -1,6 +1,7 @@
 package JavaConcept;
 
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
@@ -11,11 +12,16 @@ public class Duplicates {
 
         int[] arr = {100, 123, 234, 398, 100,234,100, 55,55};
         findDuplicates(arr);
+        findDuplicates2(arr);
+
+        String[] myArray = { "ab", "cd", "ab", "de", "cd" };
+
+
     }
 
     public static void findDuplicates(int[] arr) {
         HashMap<Integer, Integer> map = new HashMap<>();
-//key=elements   numberOfElements=value
+        //key=elements   numberOfElements=value
         for (int num : arr) {
             if (map.get(num) == null) {
                 map.put(num, 1);
@@ -40,5 +46,18 @@ public class Duplicates {
 //                }
 //            }
         //}
+    }
+    public static void findDuplicates2(int[] input) {
+        Set<Integer> duplicates = new HashSet<Integer>();
+       for (int i = 0; i < input.length; i++) {
+           for (int j = 1; j < input.length; j++) {
+               if (input[i] == input[j] && i != j) { // duplicate element found
+                   duplicates.add(input[i]);
+                   break;
+               }
+           }
+       }
+       System.out.println(duplicates);
+
     }
 }

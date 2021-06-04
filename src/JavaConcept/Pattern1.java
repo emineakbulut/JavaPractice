@@ -43,6 +43,10 @@ public class Pattern1 {
 
             rowCount++;
         }
+
+        int c=8;
+        int b = +c;
+        System.out.println(c);
     }
     }
 
